@@ -6,46 +6,73 @@ body {
     line-height: 1.6;
 }
 
+main {
+    padding: 40px 0;
+}
+
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 0 20px;
 }
 
 h1 {
+    margin: 0 0 10px;
+    line-height: 1.2;
     font-size: 40px;
-    margin-bottom: 10px;
+}
+
+h1 span {
+    font-size: 33px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts span + span {
+    position: relative;
+    margin-left: 30px;
+}
+
+.contacts span + span:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+    background: #e2e8f0;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 15px 0;
 }
 
 p {
     color: #94a3b8;
 }
 
-.block {
-    margin-top: 40px;
-    padding: 20px;
-    background: #111827;
-    border-radius: 12px;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.projects a {
+a {
     color: #60a5fa;
     text-decoration: none;
-    margin: 10px 0;
 }
 
-.projects a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.projects hr {
-    width: 100%;
+.block {
+    margin-top: 50px;
 }
 
 .skills span {
@@ -57,8 +84,19 @@ p {
     font-size: 14px;
 }
 
+.projects ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projects ul li span {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
 footer {
-    margin-top: 60px;
+    padding-bottom: 40px;
     font-size: 14px;
     color: #64748b;
 }
